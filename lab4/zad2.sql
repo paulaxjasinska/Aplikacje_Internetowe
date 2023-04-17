@@ -1,0 +1,1 @@
+-- Napisać tworzenie struktuty tabeli "questions"

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zad2</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="inne" class="container mt-5 mb-3">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <h2>Zapytanie o ofertę</h2>
+                <form method="POST" action="./zad4.php">
+                    <div class="form-group mt-2 mb-3">
+                        <label for="exampleFormControlInput1">Adres email</label>
+                        <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleFormSelect1">Rodzaj oferty</label>
+                        <select name="offers" class="form-select" id="exampleFormControlSelect1">
+                            <option selected value="indywidualna">indywidualna</option>
+                            <option value="grupowa">grupowa</option>
+                            <option value="specjalna">specjalna</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleFormControlBudget">Budżet</label>
+                        <div class="input-group mb-3">
+                          <input name="budget" type="number" min="0" placeholder="20000" step="any" class="form-control">
+                          <span class="input-group-text">PLN</span>
+                        </div>                    
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleFormControlTextarea1">Komentarz</label>
+                        <textarea name="comment" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group mb-3 d-flex justify-content-center">
+                        <input value="Wyslij" type="submit">
+                    </div>
+                </form>
+            </div>
+        </div> 
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
